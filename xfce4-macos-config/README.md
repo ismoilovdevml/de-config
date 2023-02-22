@@ -46,7 +46,7 @@ Sozlamalardan `Window Manager Tweak` bo'limga kirib uni xam rasmdagidek qilib so
 Fon rasmlarini o'natish uchun githubdan yuklab olgan de-config jildiga kirib walpapers jildini Pictures jilidga ko'chirasiz
 
 ```bash
-cd de-config
+cd de-config/xfce4-macos-config
 
 mv walpapers/ ~/Pictures/
 ```
@@ -54,6 +54,16 @@ mv walpapers/ ~/Pictures/
 Sozlamalardan desktop bo'limiga o'tib Folderga bosib Otherni bosib Pictures jidi ichidagi walpapers jildini ko'rsatib ulaymiz
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-walpapers.png)
+
+
+Jildlarni tartiblab yon panelga chiqarish uchun `Send to` ni bosib `Side pane` bosish orqali jildlarni side panelga chiqarib olamiz. Batafsil rasmda.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-directory.png)
+
+
+Hozirda siz ishlatib turgan file dasturi yashiran jildlar va fayllarni ko'rstamydi buning uchun rasmdagidek qilishimiz kerka yani `View` bo'limini bosib `Show Hidden Files` ni yoqib qo'yamiz
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-hiden-file.png)
 
 
 
@@ -105,3 +115,12 @@ git clone https://github.com/vinceliuice/WhiteSur-cursors
 
 ./install.sh
 ```
+
+### Fontlarni o'rnatish
+
+Githubdan yuklab olgan `de-config/xfce4-macos-config` jildiga kiramiz va `.fonts` jildidan nusxa olib `./home` jildiga joylashtiramiz.
+
+```bash
+mv .fonts/ ~/
+```
+
