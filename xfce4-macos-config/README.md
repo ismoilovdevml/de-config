@@ -29,6 +29,34 @@ sudo pacman -S gtk-engine-murrine sassc
 sudo pacman -S git
 ```
 
+Xfce4ni sozlab olamiz.
+
+Sozlamalardan `Desktop` bo'limini tanlaymiz va quyidagi rasm bilan bir qilib sozlab olamiz
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-desktop1.png)
+
+
+Sozlamalardan `Window Manager Tweak` bo'limga kirib uni xam rasmdagidek qilib sozlab olamiz
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-wmt-2.png)
+
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-wmt-3.png)
+
+Fon rasmlarini o'natish uchun githubdan yuklab olgan de-config jildiga kirib walpapers jildini Pictures jilidga ko'chirasiz
+
+```bash
+cd de-config
+
+mv walpapers/ ~/Pictures/
+```
+
+Sozlamalardan desktop bo'limiga o'tib Folderga bosib Otherni bosib Pictures jidi ichidagi walpapers jildini ko'rsatib ulaymiz
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-walpapers.png)
+
+
+
 ## Theme, iconlar, walpaperlar va cursorlarni o'rnatish
 
 Barcha konfiguratsiya fayllarni saqlash uchun `Templates` nomli jild ochib olamiz
@@ -36,6 +64,12 @@ Barcha konfiguratsiya fayllarni saqlash uchun `Templates` nomli jild ochib olami
 ```bash
 mkdir Templates
 cd Templates
+```
+
+Kerakli konfigratsiya kodlari va fayllarini yuklab olamiz
+
+```bash
+git clone https://github.com/ismoilovdevml/de-config.git
 ```
 ### Theme o'rnatish
 
@@ -58,6 +92,16 @@ Biz `WhiteSur-icon-theme` dan foydalanmiz. Kodlari githubdan klon qilib olamiz v
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 
 cd WhiteSur-icon-theme
+
+./install.sh
+```
+
+### Cursor o'rnatish
+
+Biz `Whitesur cursors` dan foydalanamiz. Githubdan o'zimizga klon qilib olamiz va o'rnatamiz.
+
+```bash
+git clone https://github.com/vinceliuice/WhiteSur-cursors
 
 ./install.sh
 ```
