@@ -22,14 +22,26 @@
 
 ## Ishni boshlash
 
-Kerakli dasturlarni o'rnatib olamiz
+Xfce4ni sozlab olamiz.
+
+Konfigratsiya faylari va kodlarini githubdan yuklab olamiz.
 
 ```bash
-sudo pacman -S gtk-engine-murrine sassc
-sudo pacman -S git
+git clone https://github.com/ismoilovdevml/de-config.git
 ```
 
-Xfce4ni sozlab olamiz.
+## O'rnatuvchi
+Terminalda ko'p ishlashga to'gri kelganligi, bu ancha vaqt olishi va yangi foydalanuvchilar uchun qiyinligi (chalkashib qolishi mumkin) uchun buni qisqartirish va soddalashtirish maqsadida installer.sh dasturini yozib chiqdim. Bu dasturni ishga tuhsursangiz o'zi atomatik ravishda hamma konfigratsiyalarni o'rnatadi va sozlaydi. Bu juda yaxshi.
+
+O'rnatuvchuni ishga tushirish uchun Githubdan yuklab olgan de-config konfigratsiyalar jildiga kirib installer.sh ni terminal orqali ishga tushirishimiz kerak.
+
+```bash
+sh installer.sh
+```
+
+Bu dastur o'rnatish va sozlashi uchun biroz ko'proq vaqt olishi mumkin. Bu sizning internet tezligigingizga va kompyuteringiz kuchiga bo'gliq.
+
+O'rnatuvchi dasturi hammasini avtomatik o'rnatib sozlab bo'lgandean keyin keyin qadamlarga o'tsak bo'ladi.
 
 Sozlamalardan `Desktop` bo'limini tanlaymiz va quyidagi rasm bilan bir xil qilib sozlab olamiz
 
@@ -67,7 +79,7 @@ Hozirda siz ishlatib turgan file dasturi yashiran jildlar va fayllarni ko'rsatam
 
 
 
-## Theme, iconlar, walpaperlar va cursorlarni o'rnatish
+<!-- ## Theme, iconlar, walpaperlar va cursorlarni o'rnatish
 
 Barcha konfiguratsiya fayllarni saqlash uchun `Templates` nomli jild ochib olamiz
 
@@ -101,9 +113,9 @@ Biz `WhiteSur-icon-theme` dan foydalanmiz. Kodlari githubdan klon qilib olamiz v
 ```bash
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 
-cd WhiteSur-icon-theme
+cd WhiteSur-icon-theme -->
 
-./install.sh
+<!-- ./install.sh
 ```
 
 ### Cursor o'rnatish
@@ -122,7 +134,7 @@ Githubdan yuklab olgan `de-config/xfce4-macos-config` jildiga kiramiz va `.fonts
 
 ```bash
 mv .fonts/ ~/
-```
+``` -->
 
 ## Asosiy mavzu, ikonlar va fontlarni o'rnatish
 
@@ -183,7 +195,7 @@ Sizda yashirin fayllar ko'rinmasligi mumkin shuning uchun sichqonchani o'ng tugm
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-plank-intro.png)
 
 
-Plank Dockni quyidagi buyruq orqai o'rnatib olamiz.
+Plank Dockni quyidagi buyruq orqali o'rnatib olamiz.
 
 ```bash
 sudo pacman -S plank

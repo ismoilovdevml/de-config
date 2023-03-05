@@ -18,7 +18,7 @@ cd ../../
 
 cd Templates
 
-## Install WhiteSur-gtk-theme
+# Install WhiteSur-gtk-theme
 
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 
@@ -28,7 +28,7 @@ cd WhiteSur-gtk-theme
 
 cd ..
 
-### Install WhiteSur-icon-theme
+# Install WhiteSur-icon-theme
 
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 
@@ -38,7 +38,7 @@ cd WhiteSur-icon-theme
 
 cd ..
 
-## Install WhiteSur-cursors
+# Install WhiteSur-cursors
 
 git clone https://github.com/vinceliuice/WhiteSur-cursors
 
@@ -48,7 +48,7 @@ cd WhiteSur-cursors
 
 cd ..
 
-## Install fonts
+# Install fonts
 
 cd de-config/xfce4-macos-config
 
@@ -77,3 +77,26 @@ cd ~/Templates/WhiteSur-gtk-theme
 ./tweaks.sh -f
 
 sudo pacman -S neofetch lolcat figlet btop htop duf
+
+sudo pacman -S fish
+
+chsh -s /usr/bin/fish
+
+fish
+
+set -U fish_greeting ""
+
+sudo su 
+
+chsh -s /usr/bin/fish
+
+fish
+
+set -U fish_greeting ""
+
+exit
+
+exit
+
+
+
