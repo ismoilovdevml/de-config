@@ -31,7 +31,7 @@ sudo pacman -S git
 
 Xfce4ni sozlab olamiz.
 
-Sozlamalardan `Desktop` bo'limini tanlaymiz va quyidagi rasm bilan bir qilib sozlab olamiz
+Sozlamalardan `Desktop` bo'limini tanlaymiz va quyidagi rasm bilan bir xil qilib sozlab olamiz
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-desktop1.png)
 
@@ -43,7 +43,7 @@ Sozlamalardan `Window Manager Tweak` bo'limga kirib uni xam rasmdagidek qilib so
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-wmt-3.png)
 
-Fon rasmlarini o'natish uchun githubdan yuklab olgan de-config jildiga kirib walpapers jildini Pictures jilidga ko'chirasiz
+Fon rasmlarini o'natish uchun githubdan yuklab olgan de-config jildiga kirib walpapers jildini Pictures jildiga ko'chirasiz
 
 ```bash
 cd de-config/xfce4-macos-config
@@ -51,7 +51,7 @@ cd de-config/xfce4-macos-config
 mv walpapers/ ~/Pictures/
 ```
 
-Sozlamalardan desktop bo'limiga o'tib Folderga bosib Otherni bosib Pictures jidi ichidagi walpapers jildini ko'rsatib ulaymiz
+Sozlamalardan desktop bo'limiga o'tib Folderga bosib Otherni bosib Pictures jildi ichidagi walpapers jildini ko'rsatib ulaymiz
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-walpapers.png)
 
@@ -61,7 +61,7 @@ Jildlarni tartiblab yon panelga chiqarish uchun `Send to` ni bosib `Side pane` b
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-directory.png)
 
 
-Hozirda siz ishlatib turgan file dasturi yashiran jildlar va fayllarni ko'rstamydi buning uchun rasmdagidek qilishimiz kerka yani `View` bo'limini bosib `Show Hidden Files` ni yoqib qo'yamiz
+Hozirda siz ishlatib turgan file dasturi yashiran jildlar va fayllarni ko'rsatamydi buning uchun rasmdagidek qilishimiz kerak yani `View` bo'limini bosib `Show Hidden Files` ni yoqib qo'yamiz
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-hiden-file.png)
 
@@ -124,3 +124,31 @@ Githubdan yuklab olgan `de-config/xfce4-macos-config` jildiga kiramiz va `.fonts
 mv .fonts/ ~/
 ```
 
+## Asosiy mavzu, ikonlar va fontlarni o'rnatish
+
+Hozirda bizda asosiy konfigratsiyalar bor va o'rnatilgan. Endilikda biz ushbu konfigratsiyalarni DE da joriy qilishimiz kerak.
+
+Sozlamalar bo'limidan Appearance bo'limiga kiramiz.
+
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xce4-appearance.png)
+
+Appearancedan Style bo'limga kirib quyidagicha sozlaymiz.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-style.png)
+
+Ikonkalar va fontlarni o'rnatamiz o'rnatamiz.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-icons.png)
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-fonts.png)
+
+Tabriklayman sizda asosiy sozlamalar tugadi :)
+
+Davom etamiz
+
+Bizga Vala-Appmenu dasturi kerak bo'ladi. Bu dastur uchun alohida o'rnatuvchi dasturni yozib yozilgan siz shu dasturni o'rnatsangiz avtomatik o'rnatiladi. Buning uchun `de-config/xfce4-macos-config` jilidga kirib `global-menu.sh` dasturini ishga tushirishingiz kerak.
+
+```bash
+sh global-menu.sh
+```
+DAstur sizdan foydalanuvchi paroli va rozilingizni so'raydi siz bularga ruxsat berasiz. Dastur avtomatik o'rnatishi biroz vaqt olishi mumkin
