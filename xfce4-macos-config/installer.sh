@@ -53,3 +53,15 @@ cd ..
 cd de-config/xfce4-macos-config
 
 mv .fonts/ ~/
+
+cd xpple_menu/applications/
+
+mv Launchpad.desktop xfce-settings-manager.desktop xfce4-session-forcequit.desktop xfce4-session-logout.desktop xfce4-session-sleep.desktop pamac.manager.desktop xfce4-about.desktop xfce4-session-lockscreen.desktop xfce4-session-restart.desktop ~/.local/share/applications/
+
+cd ~/.config/
+
+mkdir menu
+
+cd ~/Templates/de-config/xfce4-macos-config/xpple_menu/
+
+mv xpple.menu ~/.config/menu/

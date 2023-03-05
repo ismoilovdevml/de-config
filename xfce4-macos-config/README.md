@@ -131,14 +131,11 @@ Hozirda bizda asosiy konfigratsiyalar bor va o'rnatilgan. Endilikda biz ushbu ko
 Sozlamalar bo'limidan Appearance bo'limiga kiramiz.
 
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xce4-appearance.png)
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xce4-appearance.jpg)
 
 Appearancedan Style bo'limga kirib quyidagicha sozlaymiz.
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-style.png)
-
-Ikonkalar va fontlarni o'rnatamiz o'rnatamiz.
-
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-icons.png)
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-fonts.png)
 
@@ -151,4 +148,34 @@ Bizga Vala-Appmenu dasturi kerak bo'ladi. Bu dastur uchun alohida o'rnatuvchi da
 ```bash
 sh global-menu.sh
 ```
-DAstur sizdan foydalanuvchi paroli va rozilingizni so'raydi siz bularga ruxsat berasiz. Dastur avtomatik o'rnatishi biroz vaqt olishi mumkin
+Dastur sizdan foydalanuvchi paroli va rozilingizni so'raydi siz bularga ruxsat berasiz. Dastur avtomatik o'rnatishi biroz vaqt olishi mumkin
+
+## XFCE PANEL sozlash
+
+Sichqonchani XFCE PAnel ustiga olib borib o'ng tugmacasini bosib rasmdagi bo'limga kiramiz.
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel.png)
+
+Shu bo'limdan items bo'limiga o'tib quyidagicha sozlab olishimiz kerak. Rasmda ko'rsatilgan itemlar ketma ketlikda bo'lishi kerak. Agar sizda rasmdaigek itemlar bo'lmasa qo'shib oling ortiqchalarini esa o'chirib tashlang
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items.png)
+
+Yangi itemlar qo'shish uchun rasmdagidek amallar bajariladi. Qizil chiziq bilan chizilgan joylarga e'tibor bering.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel-add-items.png)
+
+Application menu-ni Macosdek sozlashimiz uchun itemsdan Aplication menu sutiga bosib rasmdagi amallar bajariladi.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items-conf.png)
+
+Sozlamalar Rasmdagidek bo'lishi kerak. Endi biz ikonkani apple ikonkasiga almashtiramiz. Ikonkani almashtirish rasmdagidek bo'ladi va qidiruv joyiga star-here deb qidiramiz va star-here ikonkasini o'rnatamiz. Rasmdagi qizil chiziqlarga e'tibor bering.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items-icon.png)
+
+Ikonkani o'rnatganimizdan keyin unga konfigratsiya kodini o'rnatishimiz kerak. Rasmga e'tibor bering.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items-code.png)
+
+Sizda yashirin fayllar ko'rinmasligi mumkin shuning uchun sichqonchani o'ng tugmachasini bosib Show hidden file ni yoqib qo'yasiz va ./config/menu jildidan xpple.menu konfigratsiyani kodini tanlab o'rnatasiz.
+
+
+
