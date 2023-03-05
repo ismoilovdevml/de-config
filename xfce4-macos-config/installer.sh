@@ -65,3 +65,15 @@ mkdir menu
 cd ~/Templates/de-config/xfce4-macos-config/xpple_menu/
 
 mv xpple.menu ~/.config/menu/
+
+
+cd ~/Templates/de-config/xfce4-macos-config/icons/
+
+mv launchpad.svg ~/.local/share/icons/
+
+
+cd ~/Templates/WhiteSur-gtk-theme
+
+./tweaks.sh -f
+
+sudo pacman -S neofetch lolcat figlet btop htop duf

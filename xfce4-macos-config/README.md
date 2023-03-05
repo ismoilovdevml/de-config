@@ -177,5 +177,83 @@ Ikonkani o'rnatganimizdan keyin unga konfigratsiya kodini o'rnatishimiz kerak. R
 
 Sizda yashirin fayllar ko'rinmasligi mumkin shuning uchun sichqonchani o'ng tugmachasini bosib Show hidden file ni yoqib qo'yasiz va ./config/menu jildidan xpple.menu konfigratsiyani kodini tanlab o'rnatasiz.
 
+## Plank Dock o'rnatish
+ Rasmda Plank Dock tasvirlagan.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-plank-intro.png)
+
+
+Plank Dockni quyidagi buyruq orqai o'rnatib olamiz.
+
+```bash
+sudo pacman -S plank
+```
+Plank o'rnatildi endi biz Panel2 ni o'chirib tashlashhimiz kerak. Batafsil rasmda qizil chiziqlarga etibor bering.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-pane2.png)
+
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel2-remove.png)
+
+Panel o'chiriganidan keyin Plank dasturini ishga tushirishimiz kerak. Plank ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/cfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz
+
+```bash
+cd plank
+
+mv theme-Dark/ theme-Light/ ~/.local/share/plank/themes/
+
+plank --preferences
+```
+Plankni Rasmdagidek qilib sozlab olamiz
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-plank-conf.png)
+
+MacOSdagidek application enu qo'yish uchun ./local/share/applications jildiga kirib Launchpad.desktop faylini sichoqncha bilan bosib turib Plank dockga olib kelamiz va qo'yamiz.
+
+Kompytermiz o'chib yonganida Plank dock avtomatik ishlashi uchun Settingsdan Session and Startup bo'limga kirib `+ Add` tugmasi plankni qo'shamiz. Batafsil rasmda.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-autostart.png)
+
+## Ulauncher o'rnatish va Sozlash
+
+Rasmda Uluancher :)
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-uluncher-intro.png)
+
+
+Uluncherni o'rnatib olamiz
+
+```bash
+pamac build ulauncher
+```
+
+Uluncher o'rnatilganidan keyin uluncherni dasturini ishga tushiramiz. ctrl+space
+
+Uluncher ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/cfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz.
+
+```bash
+cd uluncher-theme
+
+mv user-themes/ ~/.config/ulauncher/
+
+```
+
+Uluncherni ctrl+space orqali chaqirib olamiz va rasmdagidek sozlaymiz.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-uluncher-conf.png)
+
+## Xfce4 Termnialini Sozlash
+
+Terminalga kirib quyidagi buyruqni yozing va sizda terminala sozlamalar bo'limi ochiladi. Siz Rasmdagidek qilib sozlab olishingiz mumkin.
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-terminal.png)
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-terminal-color.png)
+
+
+Nihoyat siz bu ishni muvafaqqiyatli tugatdingiz. Tabriklayman.
+
+Sizdagi xfce4 xam shunday ko'rinishga keldi deb o'ylayman :)
+
+![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-showcase.png)
 
 
