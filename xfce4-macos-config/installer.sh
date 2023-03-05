@@ -8,6 +8,8 @@ mkdir Templates
 
 cd Templates
 
+git clone https://github.com/ismoilovdevml/de-config.git
+
 cd de-config/xfce4-macos-config
 
 mv walpapers/ ~/Pictures/
