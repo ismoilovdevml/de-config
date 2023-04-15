@@ -2,11 +2,11 @@
 
 ## Install pamac
 
-yay -S pamac-aur
+# yay -S pamac-aur
 
 ## Install Vala-Appmenu manjaro/arch
 
-pamac build vala-panel-appmenu-common-git vala-panel-appmenu-registrar-git vala-panel-appmenu-xfce-git 
+yay build vala-panel-appmenu-common-git vala-panel-appmenu-registrar-git vala-panel-appmenu-xfce-git 
 
 sudo pacman -S appmenu-gtk-module 
 
