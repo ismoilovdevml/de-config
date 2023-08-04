@@ -207,7 +207,7 @@ Plank o'rnatildi endi biz Panel2 ni o'chirib tashlashhimiz kerak. Batafsil rasmd
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel2-remove.png)
 
-Panel o'chiriganidan keyin Plank dasturini ishga tushirishimiz kerak. Plank ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/cfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz
+Panel o'chiriganidan keyin Plank dasturini ishga tushirishimiz kerak. Plank ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/xcfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz
 
 ```bash
 cd plank
@@ -241,10 +241,10 @@ pamac build ulauncher
 
 Uluncher o'rnatilganidan keyin uluncherni dasturini ishga tushiramiz. ctrl+space
 
-Uluncher ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/cfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz.
+Uluncher ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/xcfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz.
 
 ```bash
-cd uluncher-theme
+cd ulauncher_theme
 
 mv user-themes/ ~/.config/ulauncher/
 
