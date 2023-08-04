@@ -6,7 +6,7 @@
 
 ## Install Vala-Appmenu manjaro/arch
 
-yay build vala-panel-appmenu-common-git vala-panel-appmenu-registrar-git vala-panel-appmenu-xfce-git 
+yay -S build vala-panel-appmenu-common-git vala-panel-appmenu-registrar-git vala-panel-appmenu-xfce-git 
 
 sudo pacman -S appmenu-gtk-module 
 
