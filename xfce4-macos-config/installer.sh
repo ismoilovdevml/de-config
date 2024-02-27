@@ -7,8 +7,8 @@ sudo pacman -S gtk-engine-murrine sassc git
 sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-dejavu ttf-roboto ttf-liberation  ttf-fira-mono ttf-fira-sans adobe-source-sans-pro-fonts ttf-joypixels
 
 # Create Templates directory
-mkdir Templates
-cd Templates
+mkdir ~/Templates
+cd ~/Templates
 
 # Clone de-config repository
 git clone https://github.com/ismoilovdevml/de-config.git
@@ -16,9 +16,8 @@ cd de-config/xfce4-macos-config
 
 # Move wallpapers
 mv wallpapers/ ~/Pictures/
-cd ../../
 
-cd Templates
+cd ~/Templates
 
 # Install WhiteSur-gtk-theme
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
