@@ -31,9 +31,9 @@ git clone https://github.com/ismoilovdevml/de-config.git
 ```
 
 ## O'rnatuvchi
-Terminalda ko'p ishlashga to'gri kelganligi, bu ancha vaqt olishi va yangi foydalanuvchilar uchun qiyinligi (chalkashib qolishi mumkin) uchun buni qisqartirish va soddalashtirish maqsadida installer.sh dasturini yozib chiqdim. Bu dasturni ishga tuhsursangiz o'zi atomatik ravishda hamma konfigratsiyalarni o'rnatadi va sozlaydi. Bu juda yaxshi.
+Terminalda ko'p ishlashga to'gri kelganligi, bu ancha vaqt olishi va yangi foydalanuvchilar uchun qiyinligi (chalkashib qolishi mumkin) uchun buni qisqartirish va soddalashtirish maqsadida `installer.sh` dasturini yozib chiqdim. Bu dasturni ishga tushursangiz o'zi atomatik ravishda hamma konfigratsiyalarni o'rnatadi va sozlaydi. Bu juda yaxshi.
 
-O'rnatuvchuni ishga tushirish uchun Githubdan yuklab olgan de-config konfigratsiyalar jildiga kirib installer.sh ni terminal orqali ishga tushirishimiz kerak.
+O'rnatuvchuni ishga tushirish uchun Githubdan yuklab olgan `de-config` konfigratsiyalar jildiga kirib installer.sh ni terminal orqali ishga tushirishimiz kerak.
 
 ```bash
 sh installer.sh
@@ -41,7 +41,7 @@ sh installer.sh
 
 Bu dastur o'rnatish va sozlashi uchun biroz ko'proq vaqt olishi mumkin. Bu sizning internet tezligigingizga va kompyuteringiz kuchiga bo'gliq.
 
-O'rnatuvchi dasturi hammasini avtomatik o'rnatib sozlab bo'lgandean keyin keyin qadamlarga o'tsak bo'ladi.
+O'rnatuvchi dasturi hammasini avtomatik o'rnatib sozlab bo'lgandan keyin keyingi qadamlarga o'tsak bo'ladi.
 
 Sozlamalardan `Desktop` bo'limini tanlaymiz va quyidagi rasm bilan bir xil qilib sozlab olamiz
 
@@ -55,15 +55,15 @@ Sozlamalardan `Window Manager Tweak` bo'limga kirib uni xam rasmdagidek qilib so
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-wmt-3.png)
 
-Fon rasmlarini o'natish uchun githubdan yuklab olgan de-config jildiga kirib walpapers jildini Pictures jildiga ko'chirasiz
+Fon rasmlarini o'natish uchun githubdan yuklab olgan de-config jildiga kirib wallpapers jildini Pictures jildiga ko'chirasiz
 
 ```bash
 cd de-config/xfce4-macos-config
 
-mv walpapers/ ~/Pictures/
+mv wallpapers/ ~/Pictures/
 ```
 
-Sozlamalardan desktop bo'limiga o'tib Folderga bosib Otherni bosib Pictures jildi ichidagi walpapers jildini ko'rsatib ulaymiz
+Sozlamalardan desktop bo'limiga o'tib Folderga bosib Otherni bosib Pictures jildi ichidagi wallpapers jildini ko'rsatib ulaymiz
 
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-walpapers.png)
 
@@ -164,7 +164,7 @@ Dastur sizdan foydalanuvchi paroli va rozilingizni so'raydi siz bularga ruxsat b
 
 ## XFCE PANEL sozlash
 
-Sichqonchani XFCE PAnel ustiga olib borib o'ng tugmacasini bosib rasmdagi bo'limga kiramiz.
+Sichqonchani XFCE Panel ustiga olib borib o'ng tugmacasini bosib rasmdagi bo'limga kiramiz.
 ![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel.png)
 
 Shu bo'limdan items bo'limiga o'tib quyidagicha sozlab olishimiz kerak. Rasmda ko'rsatilgan itemlar ketma ketlikda bo'lishi kerak. Agar sizda rasmdaigek itemlar bo'lmasa qo'shib oling ortiqchalarini esa o'chirib tashlang
