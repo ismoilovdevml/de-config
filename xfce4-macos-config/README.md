@@ -1,271 +1,250 @@
-# XFCE4 MacOS Theme
+# XFCE4 macOS Theme
 
-![alt text](https://images.pling.com/img/00/00/32/24/44/1403328/7c76036e5f9dad4aaeb775c16ff6c914ba9de055eea89c245248a9460bf0f2ea78af.png)
+XFCE4 ish stoli muhitini macOS ko'rinishiga keltirish bo'yicha qo'llanma.
 
-## Icons
+![XFCE4 macOS ko'rinishi](../assets/xfce4-showcase.png)
 
-![alt text](https://github.com/vinceliuice/WhiteSur-icon-theme/raw/master/preview.png)
+## Talablar
 
-## Cursors
+* Arch Linux yoki Manjaro
+* XFCE4 (LightDM bilan)
+* AUR helper: `yay` yoki `paru`
 
-![alt tetx](https://github.com/vinceliuice/WhiteSur-cursors/raw/master/preview.png)
+> **Eslatma:** ushbu konfiguratsiya Manjaro'da sinovdan o'tgan. Toza Arch Linuxda `pamac` o'rniga `yay`/`paru` ishlatiladi — quyida kerakli joylarda ikkala variant ko'rsatilgan.
 
+AUR helper o'rnatilmagan bo'lsa, avval uni o'rnatib oling:
 
-
-## XFCE4 ko'rinishini MacOS dizayniga keltirish
-
-#### Talablar:
-
-* Arch Linux Manjaro
-* xfce4 (lightdm)
-* yay va paru
+```bash
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay && makepkg -si
+```
 
 ## Ishni boshlash
 
-Xfce4ni sozlab olamiz.
-
-Konfigratsiya faylari va kodlarini githubdan yuklab olamiz.
+Konfiguratsiya fayllari va kodlarini GitHubdan yuklab olamiz:
 
 ```bash
 git clone https://github.com/ismoilovdevml/de-config.git
+cd de-config/xfce4-macos-config
 ```
 
 ## O'rnatuvchi
-Terminalda ko'p ishlashga to'gri kelganligi, bu ancha vaqt olishi va yangi foydalanuvchilar uchun qiyinligi (chalkashib qolishi mumkin) uchun buni qisqartirish va soddalashtirish maqsadida `installer.sh` dasturini yozib chiqdim. Bu dasturni ishga tushursangiz o'zi atomatik ravishda hamma konfigratsiyalarni o'rnatadi va sozlaydi. Bu juda yaxshi.
 
-O'rnatuvchuni ishga tushirish uchun Githubdan yuklab olgan `de-config` konfigratsiyalar jildiga kirib installer.sh ni terminal orqali ishga tushirishimiz kerak.
+Terminalda ko'p ishlashga to'g'ri kelgani, bu ancha vaqt olishi va yangi foydalanuvchilar uchun qiyin bo'lgani uchun jarayonni qisqartirish va soddalashtirish maqsadida `installer.sh` skripti yozilgan. Bu skript asosiy konfiguratsiyalarni avtomatik o'rnatadi va sozlaydi.
+
+O'rnatuvchini ishga tushirish uchun `de-config/xfce4-macos-config` jildiga kirib skriptni bajaring:
 
 ```bash
-sh installer.sh
+bash installer.sh
 ```
 
-Bu dastur o'rnatish va sozlashi uchun biroz ko'proq vaqt olishi mumkin. Bu sizning internet tezligigingizga va kompyuteringiz kuchiga bo'gliq.
+> **Muhim:** skriptni `sh installer.sh` bilan ishga tushirmang — u bash sintaksisidan foydalanadi, `sh` bilan xato beradi. `bash installer.sh` yoki `chmod +x installer.sh && ./installer.sh` deb yozing.
 
-O'rnatuvchi dasturi hammasini avtomatik o'rnatib sozlab bo'lgandan keyin keyingi qadamlarga o'tsak bo'ladi.
+Skript o'rnatish va sozlash uchun biroz ko'proq vaqt olishi mumkin. Bu sizning internet tezligingizga va kompyuteringiz quvvatiga bog'liq.
 
-Sozlamalardan `Desktop` bo'limini tanlaymiz va quyidagi rasm bilan bir xil qilib sozlab olamiz
+Skript quyidagilarni bajaradi: kerakli paketlar va fontlarni o'rnatadi, WhiteSur GTK mavzusi, ikonkalari va kursorlarini upstream'dan yuklab o'rnatadi, fon rasmlarini `~/Pictures/wallpapers` ga ko'chiradi, `.desktop` fayllari va Apple menyusi konfiguratsiyasini joylashtiradi.
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-desktop1.png)
+Skript tugagandan so'ng qolgan qadamlarni qo'lda bajaramiz.
 
+## Desktop sozlamalari
 
-Sozlamalardan `Window Manager Tweak` bo'limga kirib uni xam rasmdagidek qilib sozlab olamiz
+Sozlamalardan `Desktop` bo'limini tanlaymiz va quyidagi rasm bilan bir xil qilib sozlab olamiz:
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-wmt-2.png)
+![XFCE4 desktop sozlamalari](../assets/xfce4-desktop1.png)
 
+Sozlamalardan `Window Manager Tweaks` bo'limiga kirib, uni ham rasmdagidek sozlab olamiz:
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-wmt-3.png)
+![Window Manager Tweaks 1](../assets/xfce4-wmt-2.png)
 
-Fon rasmlarini o'natish uchun githubdan yuklab olgan de-config jildiga kirib wallpapers jildini Pictures jildiga ko'chirasiz
+![Window Manager Tweaks 2](../assets/xfce4-wmt-3.png)
+
+## Fon rasmlarini ulash
+
+`installer.sh` fon rasmlarini `~/Pictures/wallpapers` ga o'zi ko'chiradi. Agar qo'lda qilmoqchi bo'lsangiz, `wallpapers/` jildi repozitoriyning **ildizida** joylashgan (`xfce4-macos-config` ichida emas):
 
 ```bash
-cd de-config/xfce4-macos-config
-
-mv wallpapers/ ~/Pictures/
+cd de-config
+cp -r wallpapers/ ~/Pictures/
 ```
 
-Sozlamalardan desktop bo'limiga o'tib Folderga bosib Otherni bosib Pictures jildi ichidagi wallpapers jildini ko'rsatib ulaymiz
+Sozlamalardan `Desktop` bo'limiga o'tib, `Folder` ga bosib `Other...` ni tanlaymiz va `~/Pictures/wallpapers` jildini ko'rsatib ulaymiz:
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-walpapers.png)
+![Fon rasmlarini ulash](../assets/xfce4-walpapers.png)
 
+## Fayl menejerini sozlash
 
-Jildlarni tartiblab yon panelga chiqarish uchun `Send to` ni bosib `Side pane` bosish orqali jildlarni side panelga chiqarib olamiz. Batafsil rasmda.
+Jildlarni tartiblab yon panelga chiqarish uchun `Send to` → `Side pane` bosish orqali jildlarni side panelga chiqarib olamiz. Batafsil rasmda:
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-directory.png)
+![Yon panelga jild qo'shish](../assets/xfce4-directory.png)
 
+Fayl menejeri standart holda yashirin jildlar va fayllarni ko'rsatmaydi. Ularni ko'rish uchun `View` bo'limini bosib `Show Hidden Files` ni yoqib qo'yamiz:
 
-Hozirda siz ishlatib turgan file dasturi yashiran jildlar va fayllarni ko'rsatamydi buning uchun rasmdagidek qilishimiz kerak yani `View` bo'limini bosib `Show Hidden Files` ni yoqib qo'yamiz
+![Yashirin fayllarni ko'rsatish](../assets/xfce4-hiden-file.png)
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-hiden-file.png)
+## Mavzu, ikonkalar va fontlarni joriy qilish
 
+Hozirda bizda asosiy konfiguratsiyalar o'rnatilgan. Endi ularni DE'da joriy qilishimiz kerak.
 
+Sozlamalar bo'limidan `Appearance` bo'limiga kiramiz:
 
-<!-- ## Theme, iconlar, walpaperlar va cursorlarni o'rnatish
+![Appearance bo'limi](../assets/xce4-appearance.jpg)
 
-Barcha konfiguratsiya fayllarni saqlash uchun `Templates` nomli jild ochib olamiz
+`Appearance` → `Style` bo'limiga kirib quyidagicha sozlaymiz:
+
+![Style sozlamalari](../assets/xfce4-style.png)
+
+![Ikonka sozlamalari](../assets/xfce4-icons.png)
+
+![Font sozlamalari](../assets/xfce4-fonts.png)
+
+Tabriklayman, asosiy sozlamalar tugadi.
+
+## Global menyu (Vala AppMenu)
+
+macOS'dagidek yuqori paneldagi global menyu uchun `vala-panel-appmenu` kerak bo'ladi. Buning uchun alohida skript yozilgan — `de-config/xfce4-macos-config` jildida `global-menu.sh` ni ishga tushiring:
 
 ```bash
-mkdir Templates
-cd Templates
+bash global-menu.sh
 ```
 
-Kerakli konfigratsiya kodlari va fayllarini yuklab olamiz
+Skript sizdan foydalanuvchi parolini va o'rnatishga roziligingizni so'raydi. AUR'dan build qilinadigani uchun o'rnatish biroz vaqt olishi mumkin.
 
-```bash
-git clone https://github.com/ismoilovdevml/de-config.git
-```
-### Theme o'rnatish
+## XFCE panelni sozlash
 
-Biz `WhiteSur-gtk-theme` ishlatamiz uni githubdan klon qilib olamiz va o'rnatamiz.
+Sichqonchani XFCE panel ustiga olib borib o'ng tugmasini bosib rasmdagi bo'limga kiramiz:
 
-```bash
-cd Templates
+![Panel sozlamalari](../assets/xfce4-panel.png)
 
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+Shu bo'limdan `Items` bo'limiga o'tib quyidagicha sozlab olishimiz kerak. Rasmda ko'rsatilgan itemlar shu ketma-ketlikda bo'lishi kerak. Agar sizda rasmdagidek itemlar bo'lmasa, qo'shib oling; ortiqchalarini esa o'chirib tashlang:
 
-cd WhiteSur-gtk-theme
+![Panel itemlari](../assets/xfce4-items.png)
 
-./install.sh
-```
+Yangi itemlar qo'shish uchun rasmdagidek amallar bajariladi. Qizil chiziq bilan chizilgan joylarga e'tibor bering:
 
-### Iconlarni o'rnatish
-Biz `WhiteSur-icon-theme` dan foydalanmiz. Kodlari githubdan klon qilib olamiz va o'rnatamiz.
+![Panelga item qo'shish](../assets/xfce4-panel-add-items.png)
 
-```bash
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
+`Application Menu`-ni macOS'dagidek sozlash uchun `Items` dan `Application Menu` ustiga bosib rasmdagi amallar bajariladi:
 
-cd WhiteSur-icon-theme -->
+![Application Menu konfiguratsiyasi](../assets/xfce4-items-conf.png)
 
-<!-- ./install.sh
-```
+Sozlamalar rasmdagidek bo'lishi kerak. Endi ikonkani Apple ikonkasiga almashtiramiz. Ikonkani almashtirish rasmdagidek bo'ladi: qidiruv joyiga **`start-here`** deb qidiramiz va `start-here` ikonkasini tanlaymiz. Rasmdagi qizil chiziqlarga e'tibor bering:
 
-### Cursor o'rnatish
+![Apple ikonkasini o'rnatish](../assets/xfce4-items-icon.png)
 
-Biz `Whitesur cursors` dan foydalanamiz. Githubdan o'zimizga klon qilib olamiz va o'rnatamiz.
+Ikonkani o'rnatganimizdan keyin unga menyu konfiguratsiya faylini ko'rsatishimiz kerak. Rasmga e'tibor bering:
 
-```bash
-git clone https://github.com/vinceliuice/WhiteSur-cursors
+![Menyu konfiguratsiyasi](../assets/xfce4-items-code.png)
 
-./install.sh
-```
-
-### Fontlarni o'rnatish
-
-Githubdan yuklab olgan `de-config/xfce4-macos-config` jildiga kiramiz va `.fonts` jildidan nusxa olib `./home` jildiga joylashtiramiz.
-
-```bash
-mv .fonts/ ~/
-``` -->
-
-## Asosiy mavzu, ikonlar va fontlarni o'rnatish
-
-Hozirda bizda asosiy konfigratsiyalar bor va o'rnatilgan. Endilikda biz ushbu konfigratsiyalarni DE da joriy qilishimiz kerak.
-
-Sozlamalar bo'limidan Appearance bo'limiga kiramiz.
-
-
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xce4-appearance.jpg)
-
-Appearancedan Style bo'limga kirib quyidagicha sozlaymiz.
-
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-style.png)
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-icons.png)
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-fonts.png)
-
-Tabriklayman sizda asosiy sozlamalar tugadi :)
-
-Davom etamiz
-
-Bizga Vala-Appmenu dasturi kerak bo'ladi. Bu dastur uchun alohida o'rnatuvchi dasturni yozib yozilgan siz shu dasturni o'rnatsangiz avtomatik o'rnatiladi. Buning uchun `de-config/xfce4-macos-config` jilidga kirib `global-menu.sh` dasturini ishga tushirishingiz kerak.
-
-```bash
-sh global-menu.sh
-```
-Dastur sizdan foydalanuvchi paroli va rozilingizni so'raydi siz bularga ruxsat berasiz. Dastur avtomatik o'rnatishi biroz vaqt olishi mumkin
-
-## XFCE PANEL sozlash
-
-Sichqonchani XFCE Panel ustiga olib borib o'ng tugmacasini bosib rasmdagi bo'limga kiramiz.
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel.png)
-
-Shu bo'limdan items bo'limiga o'tib quyidagicha sozlab olishimiz kerak. Rasmda ko'rsatilgan itemlar ketma ketlikda bo'lishi kerak. Agar sizda rasmdaigek itemlar bo'lmasa qo'shib oling ortiqchalarini esa o'chirib tashlang
-
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items.png)
-
-Yangi itemlar qo'shish uchun rasmdagidek amallar bajariladi. Qizil chiziq bilan chizilgan joylarga e'tibor bering.
-
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel-add-items.png)
-
-Application menu-ni Macosdek sozlashimiz uchun itemsdan Aplication menu sutiga bosib rasmdagi amallar bajariladi.
-
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items-conf.png)
-
-Sozlamalar Rasmdagidek bo'lishi kerak. Endi biz ikonkani apple ikonkasiga almashtiramiz. Ikonkani almashtirish rasmdagidek bo'ladi va qidiruv joyiga star-here deb qidiramiz va star-here ikonkasini o'rnatamiz. Rasmdagi qizil chiziqlarga e'tibor bering.
-
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items-icon.png)
-
-Ikonkani o'rnatganimizdan keyin unga konfigratsiya kodini o'rnatishimiz kerak. Rasmga e'tibor bering.
-
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-items-code.png)
-
-Sizda yashirin fayllar ko'rinmasligi mumkin shuning uchun sichqonchani o'ng tugmachasini bosib Show hidden file ni yoqib qo'yasiz va ./config/menu jildidan xpple.menu konfigratsiyani kodini tanlab o'rnatasiz.
+Yashirin fayllar ko'rinmasligi mumkin, shuning uchun fayl tanlash oynasida sichqonchaning o'ng tugmasini bosib `Show Hidden Files` ni yoqib qo'yasiz va `~/.config/menus/` jildidan `xpple.menu` faylini tanlaysiz. (Bu faylni `installer.sh` o'sha joyga o'zi ko'chirgan.)
 
 ## Plank Dock o'rnatish
- Rasmda Plank Dock tasvirlagan.
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-plank-intro.png)
+Rasmda Plank Dock tasvirlangan:
 
+![Plank Dock](../assets/xfce4-plank-intro.png)
 
-Plank Dockni quyidagi buyruq orqali o'rnatib olamiz.
+Plank Dockni quyidagi buyruq orqali o'rnatib olamiz:
 
 ```bash
 sudo pacman -S plank
 ```
-Plank o'rnatildi endi biz Panel2 ni o'chirib tashlashhimiz kerak. Batafsil rasmda qizil chiziqlarga etibor bering.
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-pane2.png)
+Plank o'rnatildi, endi `Panel 2` ni o'chirib tashlashimiz kerak. Batafsil rasmda — qizil chiziqlarga e'tibor bering:
 
+![Panel 2](../assets/xfce4-pane2.png)
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-panel2-remove.png)
+![Panel 2 ni o'chirish](../assets/xfce4-panel2-remove.png)
 
-Panel o'chiriganidan keyin Plank dasturini ishga tushirishimiz kerak. Plank ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/xcfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz
+Panel o'chirilganidan keyin Plank dasturini ishga tushiramiz va uning mavzu fayllarini joylashtiramiz. Terminalni ochib `de-config/xfce4-macos-config` jildiga kiramiz:
 
 ```bash
 cd plank
-
-mv theme-Dark/ theme-Light/ ~/.local/share/plank/themes/
-
+mkdir -p ~/.local/share/plank/themes/
+cp -r theme-Dark/ theme-Light/ ~/.local/share/plank/themes/
 plank --preferences
 ```
-Plankni Rasmdagidek qilib sozlab olamiz
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-plank-conf.png)
+Plankni rasmdagidek sozlab olamiz:
 
-MacOSdagidek application enu qo'yish uchun ./local/share/applications jildiga kirib Launchpad.desktop faylini sichoqncha bilan bosib turib Plank dockga olib kelamiz va qo'yamiz.
+![Plank sozlamalari](../assets/xfce4-plank-conf.png)
 
-Kompytermiz o'chib yonganida Plank dock avtomatik ishlashi uchun Settingsdan Session and Startup bo'limga kirib `+ Add` tugmasi plankni qo'shamiz. Batafsil rasmda.
+macOS'dagidek Launchpad qo'yish uchun `~/.local/share/applications/` jildiga kirib `Launchpad.desktop` faylini sichqoncha bilan bosib turib Plank dockga olib kelamiz va qo'yamiz.
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-autostart.png)
+Kompyuter o'chib yonganida Plank dock avtomatik ishga tushishi uchun `Settings` → `Session and Startup` bo'limiga kirib `+ Add` tugmasi bilan plankni qo'shamiz. Batafsil rasmda:
 
-## Ulauncher o'rnatish va Sozlash
+![Plank autostart](../assets/xfce4-autostart.png)
 
-Rasmda Uluancher :)
+## Ulauncher o'rnatish va sozlash
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-uluncher-intro.png)
+Rasmda Ulauncher:
 
+![Ulauncher](../assets/xfce4-uluncher-intro.png)
 
-Uluncherni o'rnatib olamiz
+Ulauncher AUR paketi, shuning uchun AUR helper bilan o'rnatiladi:
 
 ```bash
+# Arch Linux (yay yoki paru bilan)
+yay -S ulauncher
+
+# Manjaro (pamac bilan)
 pamac build ulauncher
 ```
 
-Uluncher o'rnatilganidan keyin uluncherni dasturini ishga tushiramiz. ctrl+space
+Ulauncher o'rnatilganidan keyin uni `Ctrl+Space` orqali ishga tushiramiz.
 
-Uluncher ishga tushirilganidan keyin uni konfigratsiya fayllarini o'rnatishimiz kerak buning uchun terminalni ochib de-config/xcfe4-macos-config jildiga kiramiz va quyidagi buyruqni yozamiz.
+Keyin uning mavzu fayllarini joylashtiramiz. Terminalni ochib `de-config/xfce4-macos-config` jildiga kiramiz:
 
 ```bash
 cd ulauncher_theme
-
-mv user-themes/ ~/.config/ulauncher/
-
+mkdir -p ~/.config/ulauncher/
+cp -r user-themes/ ~/.config/ulauncher/
 ```
 
-Uluncherni ctrl+space orqali chaqirib olamiz va rasmdagidek sozlaymiz.
+Ulauncherni `Ctrl+Space` orqali chaqirib olamiz va rasmdagidek sozlaymiz:
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-uluncher-conf.png)
+![Ulauncher sozlamalari](../assets/xfce4-uluncher-conf.png)
 
-## Xfce4 Termnialini Sozlash
+## XFCE4 terminalini sozlash
 
-Terminalga kirib quyidagi buyruqni yozing va sizda terminala sozlamalar bo'limi ochiladi. Siz Rasmdagidek qilib sozlab olishingiz mumkin.
+Terminalni ochib menyudan `Edit` → `Preferences` ni tanlaymiz (yoki quyidagi buyruqni yozamiz), sizda terminal sozlamalari oynasi ochiladi:
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-terminal.png)
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-terminal-color.png)
+```bash
+xfce4-terminal --preferences
+```
 
+Siz rasmdagidek qilib sozlab olishingiz mumkin:
 
-Nihoyat siz bu ishni muvafaqqiyatli tugatdingiz. Tabriklayman.
+![Terminal sozlamalari](../assets/xfce4-terminal.png)
 
-Sizdagi xfce4 xam shunday ko'rinishga keldi deb o'ylayman :)
+![Terminal rang sozlamalari](../assets/xfce4-terminal-color.png)
 
-![alt text](https://github.com/ismoilovdevml/de-config/blob/master/assets/xfce4-showcase.png)
+## GRUB mavzusi (ixtiyoriy)
 
+Repozitoriyada Monterey GRUB mavzusi ham mavjud. O'rnatish uchun:
 
+```bash
+cd monterey-grub-theme
+sudo bash install.sh
+```
+
+Bu skript `/etc/default/grub` faylini o'zgartiradi va `grub-mkconfig` ni qayta ishga tushiradi. Skript o'zi zaxira nusxa (`/etc/default/grub.bak`) yaratadi.
+
+## Yakun
+
+Nihoyat, siz bu ishni muvaffaqiyatli tugatdingiz. Tabriklayman!
+
+Sizdagi XFCE4 ham shunday ko'rinishga keldi deb o'ylayman:
+
+![Natija](../assets/xfce4-showcase.png)
+
+## Manbalar
+
+Ushbu konfiguratsiya quyidagi open-source loyihalarga tayanadi:
+
+* [WhiteSur GTK theme](https://github.com/vinceliuice/WhiteSur-gtk-theme) — vinceliuice
+* [WhiteSur icon theme](https://github.com/vinceliuice/WhiteSur-icon-theme) — vinceliuice
+* [WhiteSur cursors](https://github.com/vinceliuice/WhiteSur-cursors) — vinceliuice
+* [vala-panel-appmenu](https://gitlab.com/vala-panel-project/vala-panel-appmenu)
+* [Plank](https://launchpad.net/plank)
+* [Ulauncher](https://ulauncher.io/)
